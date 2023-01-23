@@ -54,11 +54,11 @@
     <Compile Include="FrmRegistrarse.Designer.cs">
       <DependentUpon>FrmRegistrarse.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmValidar.cs">
+    <Compile Include="FrmValidacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmValidar.Designer.cs">
-      <DependentUpon>FrmValidar.cs</DependentUpon>
+    <Compile Include="FrmValidacion.Designer.cs">
+      <DependentUpon>FrmValidacion.cs</DependentUpon>
     </Compile>
     <Compile Include="MDIJuegos.cs">
       <SubType>Form</SubType>
@@ -71,8 +71,8 @@
     <EmbeddedResource Include="FrmRegistrarse.resx">
       <DependentUpon>FrmRegistrarse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmValidar.resx">
-      <DependentUpon>FrmValidar.cs</DependentUpon>
+    <EmbeddedResource Include="FrmValidacion.resx">
+      <DependentUpon>FrmValidacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIJuegos.resx">
       <DependentUpon>MDIJuegos.cs</DependentUpon>

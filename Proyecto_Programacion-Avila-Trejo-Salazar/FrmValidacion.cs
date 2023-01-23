@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Proyecto_Programacion_Avila_Trejo_Salazar
 {
-    public partial class Form1 : Form
+    public partial class FrmValidacion : Form
     {
-        public Form1()
+        public FrmValidacion()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form f1= new FrmRegistrarse();
+            this.Hide();
+            f1.Show();
         }
     }
 }
