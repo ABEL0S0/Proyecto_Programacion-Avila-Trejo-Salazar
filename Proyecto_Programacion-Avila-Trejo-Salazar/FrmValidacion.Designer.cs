@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtContrasenia = new System.Windows.Forms.TextBox();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.btnfRegistrar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -55,19 +55,21 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña:";
             // 
-            // textBox1
+            // txtUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(203, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtUsuario.Location = new System.Drawing.Point(203, 110);
+            this.txtUsuario.MaxLength = 20;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(135, 20);
+            this.txtUsuario.TabIndex = 2;
             // 
-            // textBox2
+            // txtContrasenia
             // 
-            this.textBox2.Location = new System.Drawing.Point(221, 173);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtContrasenia.Location = new System.Drawing.Point(221, 173);
+            this.txtContrasenia.MaxLength = 20;
+            this.txtContrasenia.Name = "txtContrasenia";
+            this.txtContrasenia.Size = new System.Drawing.Size(138, 20);
+            this.txtContrasenia.TabIndex = 3;
             // 
             // btnIniciar
             // 
@@ -77,6 +79,7 @@
             this.btnIniciar.TabIndex = 4;
             this.btnIniciar.Text = "Iniciar Sesion";
             this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // btnfRegistrar
             // 
@@ -88,25 +91,26 @@
             this.btnfRegistrar.UseVisualStyleBackColor = true;
             this.btnfRegistrar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnCerrar
+            // btnSalir
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(342, 287);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(130, 38);
-            this.btnCerrar.TabIndex = 6;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnSalir.Location = new System.Drawing.Point(342, 287);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(130, 38);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FrmValidacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 433);
-            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnfRegistrar);
             this.Controls.Add(this.btnIniciar);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtContrasenia);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmValidacion";
@@ -120,11 +124,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtContrasenia;
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Button btnfRegistrar;
-        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 

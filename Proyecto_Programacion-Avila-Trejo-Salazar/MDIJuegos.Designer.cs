@@ -30,55 +30,54 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.juegosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.juegoDeLaMemoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dinosaurioGoogleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.opcionesDeSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.opcionesDeSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.juegosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.juegoDeLaMemoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dinosaurioGoogleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip
             // 
+            this.menuStrip.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.opcionesDeSesionToolStripMenuItem,
-            this.juegosToolStripMenuItem});
+            this.juegosToolStripMenuItem,
+            this.opcionesDeSesionToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(632, 24);
+            this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menuStrip.Size = new System.Drawing.Size(128, 453);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
             // 
-            // toolStrip
+            // juegosToolStripMenuItem
             // 
-            this.toolStrip.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(632, 25);
-            this.toolStrip.TabIndex = 1;
-            this.toolStrip.Text = "ToolStrip";
+            this.juegosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.juegoDeLaMemoriaToolStripMenuItem,
+            this.dinosaurioGoogleToolStripMenuItem});
+            this.juegosToolStripMenuItem.Name = "juegosToolStripMenuItem";
+            this.juegosToolStripMenuItem.Size = new System.Drawing.Size(115, 19);
+            this.juegosToolStripMenuItem.Text = "Juegos";
             // 
-            // statusStrip
+            // juegoDeLaMemoriaToolStripMenuItem
             // 
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 431);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(632, 22);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "StatusStrip";
+            this.juegoDeLaMemoriaToolStripMenuItem.Name = "juegoDeLaMemoriaToolStripMenuItem";
+            this.juegoDeLaMemoriaToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.juegoDeLaMemoriaToolStripMenuItem.Text = "Juego de la memoria";
             // 
-            // toolStripStatusLabel
+            // dinosaurioGoogleToolStripMenuItem
             // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
-            this.toolStripStatusLabel.Text = "Estado";
+            this.dinosaurioGoogleToolStripMenuItem.Name = "dinosaurioGoogleToolStripMenuItem";
+            this.dinosaurioGoogleToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.dinosaurioGoogleToolStripMenuItem.Text = "Dinosaurio Google";
             // 
             // opcionesDeSesionToolStripMenuItem
             // 
@@ -86,7 +85,7 @@
             this.cerrarSesionToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.opcionesDeSesionToolStripMenuItem.Name = "opcionesDeSesionToolStripMenuItem";
-            this.opcionesDeSesionToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
+            this.opcionesDeSesionToolStripMenuItem.Size = new System.Drawing.Size(115, 19);
             this.opcionesDeSesionToolStripMenuItem.Text = "Opciones de Sesion";
             // 
             // cerrarSesionToolStripMenuItem
@@ -101,26 +100,29 @@
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
-            // juegosToolStripMenuItem
+            // toolStrip
             // 
-            this.juegosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.juegoDeLaMemoriaToolStripMenuItem,
-            this.dinosaurioGoogleToolStripMenuItem});
-            this.juegosToolStripMenuItem.Name = "juegosToolStripMenuItem";
-            this.juegosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.juegosToolStripMenuItem.Text = "Juegos";
+            this.toolStrip.Location = new System.Drawing.Point(128, 0);
+            this.toolStrip.Name = "toolStrip";
+            this.toolStrip.Size = new System.Drawing.Size(504, 25);
+            this.toolStrip.TabIndex = 1;
+            this.toolStrip.Text = "ToolStrip";
             // 
-            // juegoDeLaMemoriaToolStripMenuItem
+            // statusStrip
             // 
-            this.juegoDeLaMemoriaToolStripMenuItem.Name = "juegoDeLaMemoriaToolStripMenuItem";
-            this.juegoDeLaMemoriaToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.juegoDeLaMemoriaToolStripMenuItem.Text = "Juego de la memoria";
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(128, 431);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(504, 22);
+            this.statusStrip.TabIndex = 2;
+            this.statusStrip.Text = "StatusStrip";
             // 
-            // dinosaurioGoogleToolStripMenuItem
+            // toolStripStatusLabel
             // 
-            this.dinosaurioGoogleToolStripMenuItem.Name = "dinosaurioGoogleToolStripMenuItem";
-            this.dinosaurioGoogleToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.dinosaurioGoogleToolStripMenuItem.Text = "Dinosaurio Google";
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
+            this.toolStripStatusLabel.Text = "Estado";
             // 
             // MDIJuegos
             // 
