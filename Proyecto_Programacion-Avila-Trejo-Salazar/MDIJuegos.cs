@@ -10,13 +10,15 @@ using System.Windows.Forms;
 
 namespace Proyecto_Programacion_Avila_Trejo_Salazar
 {
-    public partial class MDIJuegos : Form
+    public partial class MDIJuegos : Form 
     {
         private int childFormNumber = 0;
 
         public MDIJuegos()
         {
             InitializeComponent();
+            FrmValidacion form = new FrmValidacion();
+            this.Text = "Bienvenido: " + form.usuario;
         }
 
         private void ShowNewForm(object sender, EventArgs e)
@@ -107,6 +109,45 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
         private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Esta seguro de cerrar sesion?", "Confirmación", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                // El usuario ha seleccionado "Sí"
+                // Procesar la acción para guardar los cambios
+                Form form = new FrmValidacion();
+                form.Show();
+                this.Close();
+            }
+            else if (result == DialogResult.No)
+            {
+                // El usuario ha seleccionado "No"
+                // No se realizarán cambios
+            }
+        }
+
+        private void MDIJuegos_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Esta seguro que quiere Salir? (Se cerrara la sesion automaticamente)", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                // El usuario ha seleccionado "Sí"
+                // Procesar la acción para guardar los cambios
+                Application.Exit();
+            }
+            else if (result == DialogResult.No)
+            {
+                // El usuario ha seleccionado "No"
+                // No se realizarán cambios
+            }
         }
     }
 }

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,26 +29,35 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
         {
             Application.Exit();
         }
-
-        private void btnIniciar_Click(object sender, EventArgs e)
+        public string usuario;
+        public void btnIniciar_Click(object sender, EventArgs e)
         {
-            try
+            if (this.txtUsuario.TextLength == (0) || this.txtContrasenia.TextLength == (0))
             {
-                Proyecto_Programacion_Avila_Trejo_Salazar.DAO.UsuariosDao oEst = new Proyecto_Programacion_Avila_Trejo_Salazar.DAO.UsuariosDao();
+                MessageBox.Show("Ingrese Usuario o contraseña", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            Proyecto_Programacion_Avila_Trejo_Salazar.DAO.UsuariosDao oEst = new Proyecto_Programacion_Avila_Trejo_Salazar.DAO.UsuariosDao();
 
-            string usuario = this.txtUsuario.Text;
+            usuario = this.txtUsuario.Text;
             string contrasenia=this.txtContrasenia.Text;
             bool x = oEst.InicioSesion(usuario, contrasenia);
             
             if (x == true)
             {
-                MessageBox.Show("Inicio de Sesion exitoso.",":^)");
+                    MessageBox.Show("Inicio de Sesion exitoso.","Inicializando",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MDIJuegos menu = new MDIJuegos();
+                    this.Hide();
+                    menu.Show();
             }
             else
             {
-                MessageBox.Show("No se pudo iniciar sesion.", "Advertencia");
+                MessageBox.Show("Usuario o Contraseña incorrectas.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            }catch(Exception ex) {MessageBox.Show(ex.Message); }
+
+            this.txtContrasenia.Clear();
+            this.txtUsuario.Clear();            
         }
+       
     }
 }

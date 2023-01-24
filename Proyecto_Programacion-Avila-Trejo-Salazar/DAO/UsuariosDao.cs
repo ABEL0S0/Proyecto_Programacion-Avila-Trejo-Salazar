@@ -84,7 +84,7 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar.DAO
            else
            {
                 Resultado = false;
-                connection.Open();
+                connection.Close();
            }
            connection.Close();
            return Resultado;
