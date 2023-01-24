@@ -5,13 +5,15 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Proyecto_Programacion_Avila_Trejo_Salazar.DAO
 {
     internal class UsuariosDao
     {
         private string cadenadeconexion = @"Server = ROBERSON1; database=Project; integrated security=true";//Poner el nombre del servidor y su seguridad
-        
+        protected string mensaje;
+
         /// <summary>
         /// Registrar Usuario en base de datos
         /// </summary>
@@ -45,36 +47,48 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar.DAO
             return resultado;
         }
 
+        public string Mensaje
+        {
+            get
+            {
+                return this.mensaje;
+            }
+        }
+
         /// <summary>
         /// Funcion que inicia sesion al recuperar los datos de la base de datos
         /// </summary>
         /// <param name="Usuario"></param>
         /// <param name="Contrasenia"></param>
         /// <returns></returns>
-        public DataTable InicioSesion(string Usuario, string Contrasenia)
+        public bool InicioSesion(string Usuario, string Contrasenia)
         {
-            //Creo la conexion con el motor de base de datos
-            SqlConnection connection = new SqlConnection(cadenadeconexion);
+            
+           bool Resultado = false;
 
-            //Creo el comando que busca el registro
-            string sql = "select Nombres, Apellidos, Usuario, Contrasenia "
-                + "from Project where Usuario=@Usuario, Contrasenia=@Contrasenia";
-
-            //Declaro un objeto tipo data Table
-            DataTable dt = new DataTable();
-
-            //Declaro un adaptador de datos
-            SqlDataAdapter ad = new SqlDataAdapter(sql, connection);
-
-            //Agrego el parametro matricula
-            ad.SelectCommand.Parameters.Add(new SqlParameter("@Usuario", Usuario));
-            ad.SelectCommand.Parameters.Add(new SqlParameter("@Contrasenia", Contrasenia));
-
-            //Lleno el datatable dt
-            ad.Fill(dt);
-
-            //retorno el datatable dt
-            return dt;
+           //Creo la conexion con el motor de base de datos
+           SqlConnection connection = new SqlConnection(cadenadeconexion);
+           //Creo el comando que busca el registro
+           string sql = string.Format(@"select Nombres, Apellidos, Usuario, Contrasenia "
+                    + "from Usuarios where Usuario='{0}' and Contrasenia='{1}'", Usuario, Contrasenia);
+           SqlCommand comando = new SqlCommand(sql, connection);
+           connection.Open();
+           SqlDataReader Reg = null;
+           Reg = comando.ExecuteReader();
+           if (Reg.Read())
+           {
+                Resultado = true;
+                connection.Close();
+                return Resultado;
+           }
+           else
+           {
+                Resultado = false;
+                connection.Open();
+           }
+           connection.Close();
+           return Resultado;
+            
         }
     }
 }
