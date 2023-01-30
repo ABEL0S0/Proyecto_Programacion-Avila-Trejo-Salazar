@@ -47,6 +47,14 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar.DAO
             return resultado;
         }
 
+        public string Mensaje
+        {
+            get
+            {
+                return this.mensaje;
+            }
+        }
+
         /// <summary>
         /// Funcion que inicia sesion al recuperar los datos de la base de datos
         /// </summary>
@@ -64,9 +72,7 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar.DAO
            string sql = string.Format(@"select Nombres, Apellidos, Usuario, Contrasenia "
                     + "from Usuarios where Usuario='{0}' and Contrasenia='{1}'", Usuario, Contrasenia);
            SqlCommand comando = new SqlCommand(sql, connection);
-            //Abro la conexion
            connection.Open();
-            //Buscamos los datos dentro del data Base
            SqlDataReader Reg = null;
            Reg = comando.ExecuteReader();
            if (Reg.Read())
