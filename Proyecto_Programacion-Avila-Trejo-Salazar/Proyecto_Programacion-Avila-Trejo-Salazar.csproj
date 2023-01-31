@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="DAO\Usuarios.cs" />
     <Compile Include="DAO\UsuariosDao.cs" />
+    <Compile Include="FrmJmemoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJmemoria.Designer.cs">
+      <DependentUpon>FrmJmemoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRegistrarse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmJmemoria.resx">
+      <DependentUpon>FrmJmemoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarse.resx">
       <DependentUpon>FrmRegistrarse.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +94,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -98,6 +108,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Girada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Imagen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Imagen2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Imagen3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Imagen4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Imagen5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Imagen6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Imagen7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Imagen8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Imagen9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Imagen10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Imagen11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

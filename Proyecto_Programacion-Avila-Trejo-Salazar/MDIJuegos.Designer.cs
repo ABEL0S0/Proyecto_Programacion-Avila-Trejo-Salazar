@@ -72,6 +72,7 @@
             this.juegoDeLaMemoriaToolStripMenuItem.Name = "juegoDeLaMemoriaToolStripMenuItem";
             this.juegoDeLaMemoriaToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.juegoDeLaMemoriaToolStripMenuItem.Text = "Juego de la memoria";
+            this.juegoDeLaMemoriaToolStripMenuItem.Click += new System.EventHandler(this.juegoDeLaMemoriaToolStripMenuItem_Click);
             // 
             // dinosaurioGoogleToolStripMenuItem
             // 
@@ -91,14 +92,14 @@
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 

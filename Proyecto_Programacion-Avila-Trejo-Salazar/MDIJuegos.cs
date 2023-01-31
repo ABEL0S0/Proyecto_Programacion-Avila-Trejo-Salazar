@@ -149,5 +149,13 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
                 // No se realizarán cambios
             }
         }
+
+        private void juegoDeLaMemoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form childForm = new FrmJmemoria();
+            childForm.MdiParent = this;
+            childForm.Text = "Ventana " + childFormNumber++;
+            childForm.Show();
+        }
     }
 }

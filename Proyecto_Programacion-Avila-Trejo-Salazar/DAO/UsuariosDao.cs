@@ -47,13 +47,7 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar.DAO
             return resultado;
         }
 
-        public string Mensaje
-        {
-            get
-            {
-                return this.mensaje;
-            }
-        }
+        
 
         /// <summary>
         /// Funcion que inicia sesion al recuperar los datos de la base de datos
