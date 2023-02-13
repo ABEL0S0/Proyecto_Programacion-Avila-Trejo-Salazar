@@ -173,7 +173,8 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("El juego de la memoria consiste en ir descubriendo parejas de elementos iguales o relacionados entre ellos, que se encuentran escondidos. " +
+            MessageBox.Show("El juego de la memoria consiste en ir descubriendo parejas de elementos iguales o relacionados entre ellos, " +
+                "que se encuentran escondidos. " +
                 "En este caso serian las cartas de Uno","Guía",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 

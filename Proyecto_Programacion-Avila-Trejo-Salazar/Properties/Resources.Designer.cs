@@ -63,6 +63,46 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boton {
+            get {
+                object obj = ResourceManager.GetObject("boton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dinosaurio1 {
+            get {
+                object obj = ResourceManager.GetObject("dinosaurio1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dinosaurio2 {
+            get {
+                object obj = ResourceManager.GetObject("dinosaurio2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dinosaurio3 {
+            get {
+                object obj = ResourceManager.GetObject("dinosaurio3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Girada {
             get {
                 object obj = ResourceManager.GetObject("Girada", resourceCulture);
@@ -176,6 +216,36 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar.Properties {
         internal static System.Drawing.Bitmap Imagen9 {
             get {
                 object obj = ResourceManager.GetObject("Imagen9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap obstaculo1 {
+            get {
+                object obj = ResourceManager.GetObject("obstaculo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap obstaculo2 {
+            get {
+                object obj = ResourceManager.GetObject("obstaculo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pisodi {
+            get {
+                object obj = ResourceManager.GetObject("pisodi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

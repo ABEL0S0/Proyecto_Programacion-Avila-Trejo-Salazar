@@ -12,7 +12,6 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar.DAO
     internal class UsuariosDao
     {
         private string cadenadeconexion = @"Server = ROBERSON1; database=Project; integrated security=true";//Poner el nombre del servidor y su seguridad
-        protected string mensaje;
 
         /// <summary>
         /// Registrar Usuario en base de datos
@@ -82,7 +81,6 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar.DAO
            }
            connection.Close();
            return Resultado;
-            
         }
     }
 }

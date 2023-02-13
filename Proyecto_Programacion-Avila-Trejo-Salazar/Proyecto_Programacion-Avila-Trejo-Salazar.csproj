@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="DAO\Usuarios.cs" />
     <Compile Include="DAO\UsuariosDao.cs" />
+    <Compile Include="FrmJdinosaurio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJdinosaurio.Designer.cs">
+      <DependentUpon>FrmJdinosaurio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmJmemoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmJdinosaurio.resx">
+      <DependentUpon>FrmJdinosaurio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmJmemoria.resx">
       <DependentUpon>FrmJmemoria.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +153,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Imagenes\Imagen11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\obstaculo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\obstaculo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\dinosour1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\pisodi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\dinosaurio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\dinosaurio2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\dinosaurio3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

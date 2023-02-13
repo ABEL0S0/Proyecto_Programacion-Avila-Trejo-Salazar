@@ -79,6 +79,7 @@
             this.dinosaurioGoogleToolStripMenuItem.Name = "dinosaurioGoogleToolStripMenuItem";
             this.dinosaurioGoogleToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.dinosaurioGoogleToolStripMenuItem.Text = "Dinosaurio Google";
+            this.dinosaurioGoogleToolStripMenuItem.Click += new System.EventHandler(this.dinosaurioGoogleToolStripMenuItem_Click);
             // 
             // opcionesDeSesionToolStripMenuItem
             // 

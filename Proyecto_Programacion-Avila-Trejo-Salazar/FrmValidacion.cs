@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Programacion_Avila_Trejo_Salazar.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,7 +55,7 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
             {
                 MessageBox.Show("Usuario o Contraseña incorrectas.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
+            
             this.txtContrasenia.Clear();
             this.txtUsuario.Clear();            
         }

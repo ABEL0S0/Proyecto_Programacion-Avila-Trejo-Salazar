@@ -17,8 +17,9 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
         public MDIJuegos()
         {
             InitializeComponent();
-            FrmValidacion form = new FrmValidacion();
-            this.Text = "Bienvenido: " + form.usuario;
+            FrmValidacion frmValidacion = new FrmValidacion();
+            string usuario = frmValidacion.usuario;
+            this.Text = $"Bienvenido: {usuario}";
         }
 
         private void ShowNewForm(object sender, EventArgs e)
@@ -29,54 +30,7 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
             childForm.Show();
         }
 
-        private void OpenFile(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
-            if (openFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                string FileName = openFileDialog.FileName;
-            }
-        }
 
-        private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            saveFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
-            if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                string FileName = saveFileDialog.FileName;
-            }
-        }
-
-        private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void CutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -154,7 +108,15 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
         {
             Form childForm = new FrmJmemoria();
             childForm.MdiParent = this;
-            childForm.Text = "Ventana " + childFormNumber++;
+            this.Size = new Size(917, 501);
+            childForm.Show();
+        }
+
+        private void dinosaurioGoogleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form childForm = new FrmJdinosaurio();
+            childForm.MdiParent = this;
+            this.Size = new Size(917, 501);
             childForm.Show();
         }
     }

@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(151, 113);
+            this.label1.Location = new System.Drawing.Point(151, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(151, 176);
+            this.label2.Location = new System.Drawing.Point(151, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(203, 110);
+            this.txtUsuario.Location = new System.Drawing.Point(203, 58);
             this.txtUsuario.MaxLength = 20;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(135, 20);
@@ -65,7 +65,7 @@
             // 
             // txtContrasenia
             // 
-            this.txtContrasenia.Location = new System.Drawing.Point(221, 173);
+            this.txtContrasenia.Location = new System.Drawing.Point(221, 121);
             this.txtContrasenia.MaxLength = 20;
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.PasswordChar = '*';
@@ -74,7 +74,7 @@
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(43, 286);
+            this.btnIniciar.Location = new System.Drawing.Point(43, 234);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(130, 39);
             this.btnIniciar.TabIndex = 4;
@@ -84,7 +84,7 @@
             // 
             // btnfRegistrar
             // 
-            this.btnfRegistrar.Location = new System.Drawing.Point(190, 286);
+            this.btnfRegistrar.Location = new System.Drawing.Point(190, 234);
             this.btnfRegistrar.Name = "btnfRegistrar";
             this.btnfRegistrar.Size = new System.Drawing.Size(130, 38);
             this.btnfRegistrar.TabIndex = 5;
@@ -94,7 +94,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(342, 287);
+            this.btnSalir.Location = new System.Drawing.Point(342, 235);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(130, 38);
             this.btnSalir.TabIndex = 6;
@@ -106,7 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 433);
+            this.ClientSize = new System.Drawing.Size(538, 361);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnfRegistrar);
             this.Controls.Add(this.btnIniciar);
