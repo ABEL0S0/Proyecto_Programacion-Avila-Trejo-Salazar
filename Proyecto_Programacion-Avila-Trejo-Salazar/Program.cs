@@ -16,7 +16,7 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmValidacion());
+            Application.Run(new FrmDiseño());
         }
     }
 }

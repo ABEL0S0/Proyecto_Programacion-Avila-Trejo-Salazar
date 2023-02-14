@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="DAO\Usuarios.cs" />
     <Compile Include="DAO\UsuariosDao.cs" />
+    <Compile Include="FrmDiseño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDiseño.Designer.cs">
+      <DependentUpon>FrmDiseño.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmJdinosaurio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDiseño.resx">
+      <DependentUpon>FrmDiseño.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmJdinosaurio.resx">
       <DependentUpon>FrmJdinosaurio.cs</DependentUpon>
     </EmbeddedResource>

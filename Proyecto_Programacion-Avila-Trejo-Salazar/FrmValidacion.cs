@@ -59,6 +59,6 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
             this.txtContrasenia.Clear();
             this.txtUsuario.Clear();            
         }
-       
+
     }
 }
