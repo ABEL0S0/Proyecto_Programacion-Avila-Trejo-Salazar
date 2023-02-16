@@ -19,9 +19,8 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
 
         private void button3_Click(object sender, EventArgs e)
         {
-
-            Form f1 = new FrmValidacion();
-            f1.Show();
+            FrmDiseño startmen = new FrmDiseño();
+            startmen.Show();
             this.Close();
         }
 

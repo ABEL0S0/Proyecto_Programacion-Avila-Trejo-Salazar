@@ -126,7 +126,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsOAAALDgFAvuFB
         AAADbklEQVRYR7WWS04bQRCGx8YSwQphw5JdghKJHWfgDqDkCFyBAySAlG1kkqw5ARdgg7IJyZp9jHmF
         YBu/J//X6XbmUcZDApY+eaanuurvquqeieIoKspTsS4+iCNxKjoerhnjGTbYWj5ymIMZXog90RRxQbBl
         DnMtn2PMQc8T8VZ0hRWkCMx9J/BlxbAHxXPxVVhO/wV8mdnIDYhVUReWo/8Bn/hOxUvdCFQ2hOXgIcB3
@@ -156,7 +156,7 @@
         xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
         ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
         FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
-        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsPAAALDwGS+QOl
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsOAAALDgFAvuFB
         AAACtUlEQVRYR8WXWW4TQRCG8wgouQRxLsA9kMNTOBKgSLxC4BQWIVdIngin8DLe972orz1t9Yxrxjay
         nZI+adxL/X/3dPe0z0RkV86VG+Wb8qhUlXEMz5RRRxvaWjk2MAtTFJQfSl/ZNWhLH/paOdeYhTGvlE/K
         RPnfoO9nhVyWRqaBS+WPcqgglzkbGwXKO6WiHDrISe6EXuKHgsuacqwgd2ImQvHXyrNy7PiroLVhgMVy
@@ -171,4 +171,7 @@
         2OdXVk6P1m834NF6/nJ/VL4rTwoLihECz5RRR5tzK0caETn7B/7Sda+27cLIAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>72</value>
+  </metadata>
 </root>

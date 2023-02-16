@@ -28,7 +28,9 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            FrmDiseño startmen=new FrmDiseño();
+            startmen.Show();
+            this.Close();
         }
         public string usuario;
         public void btnIniciar_Click(object sender, EventArgs e)

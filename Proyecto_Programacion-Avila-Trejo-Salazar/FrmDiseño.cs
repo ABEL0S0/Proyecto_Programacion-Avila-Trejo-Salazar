@@ -41,6 +41,7 @@ namespace Proyecto_Programacion_Avila_Trejo_Salazar
         {
             FrmRegistrarse Registrado = new FrmRegistrarse();
             Registrado.Show();
+            this.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)

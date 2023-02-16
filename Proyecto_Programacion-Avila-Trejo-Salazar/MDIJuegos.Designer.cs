@@ -46,6 +46,7 @@
             // 
             // menuStrip
             // 
+            this.menuStrip.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.juegosToolStripMenuItem,
